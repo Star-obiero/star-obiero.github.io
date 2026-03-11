@@ -112,6 +112,28 @@ section{position:relative;}
 .cert-issuer{font-size:0.8rem;color:var(--muted);}
 .cert-date{font-size:0.72rem;color:var(--accent);margin-top:0.3rem;letter-spacing:0.5px;}
 
+/* ── HIRE ── */
+#hire{padding:8rem 0;border-top:1px solid var(--border);}
+.hire-intro{max-width:600px;margin-bottom:4rem;}
+.hire-intro p{color:var(--muted);font-size:0.97rem;margin-top:1rem;}
+.hire-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:4rem;}
+.hire-card{background:var(--bg);padding:2.5rem 2rem;transition:background 0.2s;}
+.hire-card:hover{background:var(--bg2);}
+.hire-icon{font-size:2rem;margin-bottom:1.2rem;}
+.hire-type{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:0.5rem;}
+.hire-title{font-size:1.1rem;font-weight:700;margin-bottom:0.8rem;letter-spacing:-0.3px;}
+.hire-desc{font-size:0.84rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;}
+.hire-list{list-style:none;margin-bottom:1.8rem;}
+.hire-list li{font-size:0.82rem;color:var(--muted);padding:0.3rem 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:0.6rem;}
+.hire-list li::before{content:'→';color:var(--accent);font-size:0.75rem;}
+.hire-cta{display:inline-flex;align-items:center;gap:0.5rem;color:var(--accent);font-size:0.8rem;font-weight:600;text-decoration:none;letter-spacing:0.5px;text-transform:uppercase;transition:gap 0.2s;}
+.hire-cta:hover{gap:0.8rem;}
+.resume-strip{background:var(--bg2);border:1px solid var(--border);border-radius:2px;padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.resume-strip-text h4{font-size:1rem;font-weight:700;margin-bottom:0.3rem;}
+.resume-strip-text p{font-size:0.84rem;color:var(--muted);}
+.btn-download{display:inline-flex;align-items:center;gap:0.6rem;background:var(--accent);color:var(--bg);padding:0.85rem 2rem;border-radius:4px;font-weight:700;font-size:0.85rem;letter-spacing:1px;text-decoration:none;text-transform:uppercase;transition:background 0.2s;white-space:nowrap;}
+.btn-download:hover{background:var(--accent2);}
+
 #contact{padding:8rem 0;border-top:1px solid var(--border);}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
 .contact-intro p{color:var(--muted);margin-bottom:1.5rem;font-size:0.97rem;}
@@ -144,6 +166,8 @@ footer span{color:var(--accent);}
   .project-wide{grid-column:span 1;grid-template-columns:1fr;}
   .project-wide .project-img{height:200px;}
   .certs-grid{grid-template-columns:1fr;}
+  .hire-cards{grid-template-columns:1fr;}
+  .resume-strip{flex-direction:column;text-align:center;}
   footer{padding:1.5rem;flex-direction:column;gap:0.5rem;text-align:center;}
 }
 </style>
@@ -156,6 +180,7 @@ footer span{color:var(--accent);}
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#certifications">Education</a></li>
+    <li><a href="#hire">Hire Me</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="https://www.fiverr.com/users/princevalent964/manage_gigs" target="_blank" class="nav-hire">Hire Me on Fiverr</a>
@@ -169,7 +194,7 @@ footer span{color:var(--accent);}
     <div class="hero-btns">
       <a href="#projects" class="btn-gold">View My Work</a>
       <a href="https://www.fiverr.com/users/princevalent964/manage_gigs" target="_blank" class="btn-fiverr">Hire on Fiverr</a>
-      <a href="#contact" class="btn-ghost">Contact Me</a>
+      <a href="resume.pdf" download="Prince_Valentine_Obiero_Resume.pdf" class="btn-ghost">↓ Download CV</a>
     </div>
   </div>
   <div class="hero-right">
@@ -318,6 +343,70 @@ footer span{color:var(--accent);}
           <div class="cert-date">2026 · Completed</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="hire">
+  <div class="container">
+    <div class="sec-label">Opportunities</div>
+    <div class="hire-intro">
+      <h2 class="sec-title">Work With Me</h2>
+      <p>Whether you need a data science intern, a freelance ML engineer, or a project collaborator — I'm available and ready to deliver results.</p>
+    </div>
+    <div class="hire-cards">
+
+      <div class="hire-card">
+        <div class="hire-icon">🎓</div>
+        <div class="hire-type">Internship</div>
+        <h3 class="hire-title">Data Science Intern</h3>
+        <p class="hire-desc">Looking for internship opportunities where I can contribute real value while growing my expertise in financial data and ML systems.</p>
+        <ul class="hire-list">
+          <li>Available immediately</li>
+          <li>Remote or Nairobi-based</li>
+          <li>3–6 month commitment</li>
+          <li>Fintech, analytics, AI teams</li>
+        </ul>
+        <a href="mailto:princevalentine879&#64;gmail.com?subject=Internship Opportunity" class="hire-cta">Get In Touch →</a>
+      </div>
+
+      <div class="hire-card">
+        <div class="hire-icon">💼</div>
+        <div class="hire-type">Freelance</div>
+        <h3 class="hire-title">ML & Data Projects</h3>
+        <p class="hire-desc">Hire me for specific data science projects — from building predictive models to creating dashboards and financial analysis tools.</p>
+        <ul class="hire-list">
+          <li>Python & ML pipelines</li>
+          <li>Financial data analysis</li>
+          <li>Data visualization</li>
+          <li>AI chatbots & NLP</li>
+        </ul>
+        <a href="https://www.fiverr.com/users/princevalent964/manage_gigs" target="_blank" class="hire-cta">Hire on Fiverr →</a>
+      </div>
+
+      <div class="hire-card">
+        <div class="hire-icon">🤝</div>
+        <div class="hire-type">Collaboration</div>
+        <h3 class="hire-title">Project Partner</h3>
+        <p class="hire-desc">Open to collaborating on research, open-source projects, hackathons, or startup MVPs in the data science and fintech space.</p>
+        <ul class="hire-list">
+          <li>Research partnerships</li>
+          <li>Hackathon teams</li>
+          <li>Open-source contributions</li>
+          <li>Startup MVPs</li>
+        </ul>
+        <a href="mailto:princevalentine879&#64;gmail.com?subject=Collaboration Opportunity" class="hire-cta">Let's Talk →</a>
+      </div>
+
+    </div>
+
+    <!-- Resume Strip -->
+    <div class="resume-strip">
+      <div class="resume-strip-text">
+        <h4>My Full Resume / CV</h4>
+        <p>Download my resume for a complete overview of my education, skills, certifications and project experience.</p>
+      </div>
+      <a href="resume.pdf" download="Prince_Valentine_Obiero_Resume.pdf" class="btn-download">↓ Download Resume</a>
     </div>
   </div>
 </section>
